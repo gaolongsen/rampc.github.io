@@ -61,13 +61,13 @@
           </div>
 
           <div class="is-size-4 publication-authors" style="margin-bottom: 0.5cm;">
-            Accepted to <a href="https://www.ieee-ras.org/publications/ra-l">IEEE Robotics and Automation Letters</a>
+            Submitted to <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=87">IEEE Transactions on Control Systems Technology</a>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <span class="link-block">
+<!--               <span class="link-block">
                 <a href="https://ieeexplore.ieee.org/document/11106746"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -75,9 +75,9 @@
                   </span>
                   <span>Paper</span>
                 </a>
-              </span>
+              </span> -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2504.06662"
+                <a href="https://arxiv.org/abs/2503.16849"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -87,7 +87,7 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://youtu.be/VdZxhLNG6wQ"
+                <a href="https://youtu.be/gSc0174IL_o?si=o2e1exPeQ4PdAC8Q"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -97,12 +97,12 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/catachiii/rambo"
+                <a href="https://huggingface.co/datasets/gaolongsen/RobustAdaptiveMPC_TCST"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="fab fa-github"></i>
+                      <i class="fas fa-robot"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Support Dataset</span>
                   </a>
               </span>
             </div>
@@ -137,22 +137,30 @@
 
 <div class="video-wrapper">
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/VdZxhLNG6wQ?si=cJtjL4OTLlSJQiMW"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
-    </iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gSc0174IL_o?si=XH3lHllAM0a_C2dU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 </div>
 
 <div class="abstract-box mt-5">
   <h2 class="title is-4 has-text-centered">Abstract</h2>
   <div class="content has-text-justified">
-    <p>Loco-manipulation, physical interaction of various objects that is concurrently coordinated with locomotion, remains a major challenge for legged robots due to the need for both precise end-effector control and robustness to unmodeled dynamics. While model-based controllers provide precise planning via online optimization, they are limited by model inaccuracies. In contrast, learning-based methods offer robustness, but they struggle with precise modulation of interaction forces.
-    </p>
-    <p>      We introduce <strong>RAMBO</strong>, a hybrid framework that integrates model-based whole-body control within a feedback policy trained with reinforcement learning. The model-based module generates feedforward torques by solving a quadratic program, while the policy provides feedback corrective terms to enhance robustness. We validate our framework on a quadruped robot across a diverse set of real-world loco-manipulation tasks, such as pushing a shopping cart, balancing a plate, and holding soft objects, in both quadrupedal and bipedal walking. Our experiments demonstrate that RAMBO enables precise manipulation capabilities while achieving robust and dynamic locomotion.
+    <p>This paper proposes a novel robust adaptive model
+      predictive controller for on-orbit dislodging. We study on orbit
+      dislodging where a servicing spacecraft uses a robotic arm to
+      free a jammed and underpowered solar panel mounted on a
+      hybrid hinge that acts as a time varying client on a space station
+      Our method couples online set-membership identification with
+      a robust adaptive MPC to enforce safety under bounded
+      disturbances. The controller explicitly balances exploration to
+      excite the system and shrink uncertainty and exploitation to
+      improve control performance through a dual-mode cost. The
+      feasibility of the developed robust adaptive MPC method is
+      also examined through dislodging simulations and hardware
+      experiments in zero-gravity and gravity environments, respec-
+      tively. In addition, the advantages of our method are shown
+      through comparison experiments with several state-of-the-art
+      control schemes for both accuracy of parameter estimation and
+      control performance.
     </p>
   </div>
 </div>
@@ -161,10 +169,10 @@
   <h2 class="title is-4 has-text-centered"> Overview</h2>
   <div class="container is-max-desktop has-text-justified">
     <div class="has-text-centered">
-      <img src="./static/images/rambo_hl3.png" alt="Method Diagram" class="method-diagram">
+      <img src="https://github.com/gaolongsen/picx-images-hosting/raw/master/tcst2025.92qhg1uyk4.webp" alt="Method Diagram" class="method-diagram">
     </div>
     <p class="mb-5">
-Overview of the RAMBO architecture. It consists of three core components: (1) a motion reference generator, (2) a WBC module that computes feedforward joint torques, and (3) an RL policy that generates feedback corrections to both WBC input parameters and motion reference.
+      The block diagram of our robust adaptive MPC algorithm.
  </p>
   </div>
 </div>
@@ -282,8 +290,9 @@ Detailed architecture of the RAMBO control framework. The desired base velocity 
       </a> -->
     </div>
     <div class="lab-logos">
-      <img src="./static/images/CRL-Logo2.svg" alt="CRL" class="lab-logo">
-      <img src="./static/images/lecar.png" alt="LeCAR" class="lab-logo">
+      <img src="https://github.com/gaolongsen/picx-images-hosting/raw/master/unm_logo.8adl648ukr.webp" alt="UNM" class="lab-logo">
+      <img src="https://github.com/gaolongsen/picx-images-hosting/raw/master/northrop_grumman_logo.6ikmb7pzwt.webp" alt="Northrop Grumman" class="lab-logo">
+      <img src="https://github.com/gaolongsen/picx-images-hosting/raw/master/afrl.9rjq7ve0pn.webp" alt="LeCAR" class="lab-logo">
     </div>
 
     <hr style="width: 60%; margin: 2rem auto;">

@@ -732,6 +732,31 @@ a:focus {
 }
 
 
+/* Logo styling */
+.logo-unm,
+.logo-cmu {
+  max-width: 120px;
+  height: auto;
+  transition: var(--transition);
+}
+
+.logo-unm:hover,
+.logo-cmu:hover {
+  transform: scale(1.05);
+}
+
+/* Lab logos styling */
+.lab-logo {
+  max-width: 100px;
+  height: auto;
+  margin: 0 1rem;
+  transition: var(--transition);
+}
+
+.lab-logo:hover {
+  transform: scale(1.05);
+}
+
 /* Print styles */
 @media print {
   .more-works-container {
