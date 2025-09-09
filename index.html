@@ -172,7 +172,7 @@
   <h2 class="title is-4 has-text-centered"> Overview</h2>
   <div class="container is-max-desktop has-text-justified">
     <div class="has-text-centered">
-      <img src="https://github.com/gaolongsen/picx-images-hosting/raw/master/tcst2025.92qhg1uyk4.webp" alt="Method Diagram" class="method-diagram">
+      <img src="./static/images/diagram_overview.png" alt="Method Diagram" class="method-diagram" style="width: 180%; max-width: 1800px; height: auto; display: block; margin: 0 0 0 -40%;">
     </div>
     <p class="mb-5">
       The block diagram of our robust adaptive MPC algorithm.
@@ -227,7 +227,7 @@
                 <video autoplay muted loop playsinline controls src="./static/videos/rampc_3x2.mp4" width="100%" style="border-radius:10px;"></video>
               </div>
               <div class="column">
-                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Failure Case</h3>
+                <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;"><span style="color: grey;">Failure Case</span></h3>
                 <video autoplay muted loop playsinline controls src="./static/videos/failure.mp4" width="100%" style="border-radius:10px;"></video>
               </div>
             </div>
@@ -237,13 +237,13 @@
       </div>
     </div>
 
-    <div class="columns is-centered">
+<!--     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Failure Cases</h2>
         <tr>
           <td>
 
-            <div class="columns"> <!-- Correct Bulma structure -->
+            <div class="columns"> 
               <div class="column">
                 <h3 class="title is-3" style="text-align: center; margin-bottom: 10px; font-size: x-large;">Hand shaking while standing</h3>
                 <video autoplay muted loop playsinline controls src="./static/videos/failure.mp4" width="100%" style="border-radius:10px;"></video>
@@ -253,12 +253,12 @@
           </td>
         </tr>
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
 
-<div class="method-overview section">
-  <h2 class="title is-4 has-text-centered"> Method</h2>
+<!-- <div class="method-overview section">
+  <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Results</h2>
   <div class="container is-max-desktop has-text-justified">
      <div class="has-text-centered">
       <img src="./static/images/rambo_main3.png" alt="Method Diagram" class="method-diagram2">
@@ -267,7 +267,7 @@
 Detailed architecture of the RAMBO control framework. The desired base velocity and EE positions are used to generate a kinematic motion reference, which is sent to the policy and whole-body control module. The whole-body control module also takes the desired EE force to compute the feedforward joint torques. The learned policy provides corrective feedback to the base acceleration and joint position targets, enabling robust control under modeling errors and dynamic disturbances. </p>
 
   </div>
-</div>
+</div> -->
 
 <section class="section" id="BibTeX">
   <div class="container content">
@@ -276,16 +276,12 @@ Detailed architecture of the RAMBO control framework. The desired base velocity 
   </div>
 </section>
 <script>
-  const bibtex = `@ARTICLE{11106746,
-  author={Cheng, Jin and Kang, Dongho and Fadini, Gabriele and Shi, Guanya and Coros, Stelian},
-  journal={IEEE Robotics and Automation Letters},
-  title={Rambo: RL-Augmented Model-Based Whole-Body Control for Loco-Manipulation},
-  year={2025},
-  volume={10},
-  number={9},
-  pages={9462-9469},
-  keywords={Robots;Robot kinematics;Legged locomotion;Computational modeling;Quadrupedal robots;Robustness;End effectors;Training;Foot;Dynamics;Legged robots;reinforcement learning;mobile manipulation},
-  doi={10.1109/LRA.2025.3594984}}`;
+  const bibtex = `@article{gao2025safe,
+  title={Safe On-Orbit Dislodging of Deployable Structures via Robust Adaptive MPC},
+  author={Gao, Longsen and Danielson, Claus and Kwas, Andrew and Fierro, Rafael},
+  journal={arXiv preprint arXiv:2503.16849},
+  year={2025}
+}`;
   document.getElementById("bib").innerText = bibtex;
 </script>
 
@@ -300,10 +296,12 @@ Detailed architecture of the RAMBO control framework. The desired base velocity 
         <i class="fab fa-github"></i>
       </a> -->
     </div>
+    <h3 class="title is-4 has-text-centered" style="margin: 2rem 0 1rem 0;">Acknowledgement</h3>
     <div class="lab-logos">
-      <img src="https://github.com/gaolongsen/picx-images-hosting/raw/master/unm_logo.8adl648ukr.webp" alt="UNM" class="lab-logo">
+      <img src="https://github.com/gaolongsen/picx-images-hosting/raw/master/cmu_2.2ks8ujchdc.webp" alt="UNM" class="lab-logo">
+      <img src="https://github.com/gaolongsen/picx-images-hosting/raw/master/tamu.7p3xjtdsnf.webp" alt="Northrop Grumman" class="lab-logo">
       <img src="https://github.com/gaolongsen/picx-images-hosting/raw/master/northrop_grumman_logo.6ikmb7pzwt.webp" alt="Northrop Grumman" class="lab-logo">
-      <img src="https://github.com/gaolongsen/picx-images-hosting/raw/master/afrl.9rjq7ve0pn.webp" alt="LeCAR" class="lab-logo">
+      <img src="https://github.com/gaolongsen/picx-images-hosting/raw/master/afrl.9rjq7ve0pn.webp" alt="AFRL" class="lab-logo">
     </div>
 
     <hr style="width: 60%; margin: 2rem auto;">
